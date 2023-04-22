@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Gradient generator</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="gradient-box"></div>
+      <div class="row options">
+        <div class="column direction">
+          <p>Direction</p>
+          <div class="select-box">
+            <select>
+              <option value="to top">Top</option>
+              <option value="to right top" selected>Right top</option>
+              <option value="to left top">Left top</option>
+              <option value="to bottom">Bottom</option>
+              <option value="to left bottom">Left bottom</option>
+              <option value="to right bottom">Right bottom</option>
+              <option value="to right">Right</option>
+              <option value="to left">Left</option>
+            </select>
+          </div>
+        </div>
+        <div class="column colors">
+          <p>Colors</p>
+          <div class="colors-input">
+            <input type="color" value="#977DFE" />
+            <input type="color" value="#6878FF" />
+          </div>
+        </div>
+      </div>
+      <textarea class="result" disabled>
+background: linear-gradient(to right top, #977DFE, #6878FF);
+      </textarea>
+      <div class="row btns">
+        <button class="random">Random colors</button>
+        <button class="copy">Copy code</button>
+      </div>
+    </div>
+    <script src="assets/code/script.js"></script>
+  </body>
+</html>
